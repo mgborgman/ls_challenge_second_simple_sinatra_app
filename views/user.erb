@@ -1,0 +1,14 @@
+<p><strong>Email:</strong> <%= @email %></p>
+<% @interests.each do |interest| %>
+	<p><%= interest %>,</p>
+<% end %>
+</br></br></br></br></br>
+<footer>
+
+<div>
+	<a href="/">Home</a>
+	<% @other_users.each do |user| %>
+		<a href="/<%= user %>"><%= user %></a>
+	<% end %>
+</div>
+</footer>
